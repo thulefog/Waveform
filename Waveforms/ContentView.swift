@@ -18,7 +18,7 @@ class ProviderAdapter: ObservableObject {
 
     func fetch() {
         data.removeAll()
-        HealthKitDataProvider.instance.queryElectorcardiogramSamplesForRangeWithResultsCompletion(samples: sampleSize ) { [self] result in
+        HealthKitDataProvider.instance.queryECGSamplesForDistantRange(samples: sampleSize ) { [self] result in
             DispatchQueue.main.async {
                 //print("RESULT: \(result)")
                 let values = Array(result.values)

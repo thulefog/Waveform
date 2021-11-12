@@ -30,6 +30,8 @@ import HealthKit
 
 extension HealthKitDataProvider {
         
+    public typealias carteisanTimeSeries = [Double : Double]
+
     public func queryElectorcardiogramSamples(  ) {
         // Create the electrocardiogram sample type.
         let ecgType = HKObjectType.electrocardiogramType()
@@ -57,10 +59,8 @@ extension HealthKitDataProvider {
         // Execute the query.
         self.healthStore?.execute(ecgQuery)
     }
-    
-    public typealias carteisanTimeSeries = [Double : Double]
-    
-    public func queryElectorcardiogramSamplesForRangeWithResultsCompletion(samples: Int, completion: @escaping (carteisanTimeSeries) -> ()  )   {
+        
+    public func queryECGSamplesForDistantRange(samples: Int, completion: @escaping (carteisanTimeSeries) -> ()  )   {
         var timeSeries = [Double:Double]()
 
          if #available(iOS 14.0, *) {
@@ -85,7 +85,7 @@ extension HealthKitDataProvider {
                              fatalError( message )
                              
                          case .measurement(let value):
-                             print("\(#function): MEASUREMENT: ", value)
+                             //print("\(#function): MEASUREMENT: ", value)
                              let sample = (value.quantity(for: .appleWatchSimilarToLeadI)!.doubleValue(for: HKUnit.volt()) , value.timeSinceSampleStart)
                              ecgSamples.append(sample)
                            
@@ -108,7 +108,7 @@ extension HealthKitDataProvider {
              }
     }
     
-    public func queryElectorcardiogramSamplesForRange(  )  {
+    public func queryECGSamplesForRange(  )  {
         var timeSeries = [Double:Double]()
 
          if #available(iOS 14.0, *) {
@@ -130,7 +130,7 @@ extension HealthKitDataProvider {
                              fatalError( message )
                              
                          case .measurement(let value):
-                             print("\(#function): MEASUREMENT: ", value)
+                             //print("\(#function): MEASUREMENT: ", value)
                              let sample = (value.quantity(for: .appleWatchSimilarToLeadI)!.doubleValue(for: HKUnit.volt()) , value.timeSinceSampleStart)
                              ecgSamples.append(sample)
                            

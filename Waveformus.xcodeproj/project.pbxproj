@@ -18,25 +18,26 @@
 		E440E22F271C9E6E00CAC3F9 /* BridgeTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E440E217271C9E6E00CAC3F9 /* BridgeTemplate.mm */; };
 		E440E230271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E440E218271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp */; };
 		E440E231271C9E6E00CAC3F9 /* HealthKitDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */; };
-		E440E232271C9E6E00CAC3F9 /* FetchHeartRateVariabilityForDateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21C271C9E6E00CAC3F9 /* FetchHeartRateVariabilityForDateRange.swift */; };
-		E440E233271C9E6E00CAC3F9 /* HealthKitDataProvider+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21D271C9E6E00CAC3F9 /* HealthKitDataProvider+Distance.swift */; };
-		E440E235271C9E6E00CAC3F9 /* HealthKitDataProvider+HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21F271C9E6E00CAC3F9 /* HealthKitDataProvider+HeartRate.swift */; };
+		E440E232271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */; };
+		E440E233271C9E6E00CAC3F9 /* Query+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */; };
+		E440E235271C9E6E00CAC3F9 /* Query+HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */; };
 		E440E236271C9E6E00CAC3F9 /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E220271C9E6E00CAC3F9 /* GenericDataProvider.swift */; };
 		E440E238271C9E6E00CAC3F9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E222271C9E6E00CAC3F9 /* DataProvider.swift */; };
-		E440E23B271C9E6E00CAC3F9 /* HeatlhKitDataProvider+HRV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E225271C9E6E00CAC3F9 /* HeatlhKitDataProvider+HRV.swift */; };
+		E440E23B271C9E6E00CAC3F9 /* Query+HRV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */; };
 		E440E23C271C9E6E00CAC3F9 /* IDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E226271C9E6E00CAC3F9 /* IDataProvider.swift */; };
 		E440E23E271C9E6E00CAC3F9 /* IGenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E228271C9E6E00CAC3F9 /* IGenericDataProvider.swift */; };
-		E440E23F271C9E6E00CAC3F9 /* HealthKitDataProvider+BodyMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E229271C9E6E00CAC3F9 /* HealthKitDataProvider+BodyMass.swift */; };
+		E440E23F271C9E6E00CAC3F9 /* Query+BodyMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */; };
 		E440E240271C9E6E00CAC3F9 /* DistanceHistogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E22B271C9E6E00CAC3F9 /* DistanceHistogram.swift */; };
 		E440E241271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E22C271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift */; };
 		E440E242271C9E6E00CAC3F9 /* HeartRateSampleSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E22D271C9E6E00CAC3F9 /* HeartRateSampleSequence.swift */; };
 		E440E243271C9E6E00CAC3F9 /* SegmentedIntervalsDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E22E271C9E6E00CAC3F9 /* SegmentedIntervalsDataSet.swift */; };
 		E440E247271CA04F00CAC3F9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E440E246271CA04F00CAC3F9 /* HealthKit.framework */; };
 		E440E24C271CA32800CAC3F9 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E24A271CA32700CAC3F9 /* Stopwatch.swift */; };
-		E440E253271CB21A00CAC3F9 /* HealthKitDataProvider+ECG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E252271CB21A00CAC3F9 /* HealthKitDataProvider+ECG.swift */; };
+		E440E253271CB21A00CAC3F9 /* Query+ECG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E252271CB21A00CAC3F9 /* Query+ECG.swift */; };
 		E440E255271CB9E600CAC3F9 /* AlgorithmAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E254271CB9E600CAC3F9 /* AlgorithmAdapter.swift */; };
 		E440E25B271FC78E00CAC3F9 /* CalculateDerivedMeasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E25A271FC78E00CAC3F9 /* CalculateDerivedMeasures.swift */; };
 		E4870460272F3C5C00715054 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E487045F272F3C5C00715054 /* LineView.swift */; };
+		E4AE5A50273F05CA00357BC4 /* IRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE5A4F273F05C900357BC4 /* IRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,15 +75,15 @@
 		E440E218271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeDomainMeasures.cpp; sourceTree = "<group>"; };
 		E440E219271C9E6E00CAC3F9 /* TimeDomainMeasures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeDomainMeasures.h; sourceTree = "<group>"; };
 		E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitDataProvider.swift; sourceTree = "<group>"; };
-		E440E21C271C9E6E00CAC3F9 /* FetchHeartRateVariabilityForDateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchHeartRateVariabilityForDateRange.swift; sourceTree = "<group>"; };
-		E440E21D271C9E6E00CAC3F9 /* HealthKitDataProvider+Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HealthKitDataProvider+Distance.swift"; sourceTree = "<group>"; };
-		E440E21F271C9E6E00CAC3F9 /* HealthKitDataProvider+HeartRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HealthKitDataProvider+HeartRate.swift"; sourceTree = "<group>"; };
+		E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fetch+HeartRateVariability.swift"; sourceTree = "<group>"; };
+		E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+Distance.swift"; sourceTree = "<group>"; };
+		E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+HeartRate.swift"; sourceTree = "<group>"; };
 		E440E220271C9E6E00CAC3F9 /* GenericDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
 		E440E222271C9E6E00CAC3F9 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
-		E440E225271C9E6E00CAC3F9 /* HeatlhKitDataProvider+HRV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeatlhKitDataProvider+HRV.swift"; sourceTree = "<group>"; };
+		E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+HRV.swift"; sourceTree = "<group>"; };
 		E440E226271C9E6E00CAC3F9 /* IDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDataProvider.swift; sourceTree = "<group>"; };
 		E440E228271C9E6E00CAC3F9 /* IGenericDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGenericDataProvider.swift; sourceTree = "<group>"; };
-		E440E229271C9E6E00CAC3F9 /* HealthKitDataProvider+BodyMass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HealthKitDataProvider+BodyMass.swift"; sourceTree = "<group>"; };
+		E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+BodyMass.swift"; sourceTree = "<group>"; };
 		E440E22B271C9E6E00CAC3F9 /* DistanceHistogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceHistogram.swift; sourceTree = "<group>"; };
 		E440E22C271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterBeatIntervalSequence.swift; sourceTree = "<group>"; };
 		E440E22D271C9E6E00CAC3F9 /* HeartRateSampleSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateSampleSequence.swift; sourceTree = "<group>"; };
@@ -90,10 +91,11 @@
 		E440E244271CA04F00CAC3F9 /* Waveforms.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waveforms.entitlements; sourceTree = "<group>"; };
 		E440E246271CA04F00CAC3F9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		E440E24A271CA32700CAC3F9 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
-		E440E252271CB21A00CAC3F9 /* HealthKitDataProvider+ECG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthKitDataProvider+ECG.swift"; sourceTree = "<group>"; };
+		E440E252271CB21A00CAC3F9 /* Query+ECG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Query+ECG.swift"; sourceTree = "<group>"; };
 		E440E254271CB9E600CAC3F9 /* AlgorithmAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmAdapter.swift; sourceTree = "<group>"; };
 		E440E25A271FC78E00CAC3F9 /* CalculateDerivedMeasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDerivedMeasures.swift; sourceTree = "<group>"; };
 		E487045F272F3C5C00715054 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		E4AE5A4F273F05C900357BC4 /* IRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,8 +199,9 @@
 				E440E214271C9E6E00CAC3F9 /* Measurements.h */,
 				E440E215271C9E6E00CAC3F9 /* Algorithms */,
 				E440E248271CA32700CAC3F9 /* Core */,
-				E440E21A271C9E6E00CAC3F9 /* DataProvider */,
 				E440E22A271C9E6E00CAC3F9 /* TypeSystem */,
+				E4AE5A4E273F05A100357BC4 /* Repositories */,
+				E440E21A271C9E6E00CAC3F9 /* DataProvider */,
 			);
 			path = Measurements;
 			sourceTree = "<group>";
@@ -223,11 +226,6 @@
 				E440E226271C9E6E00CAC3F9 /* IDataProvider.swift */,
 				E440E222271C9E6E00CAC3F9 /* DataProvider.swift */,
 				E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */,
-				E440E21D271C9E6E00CAC3F9 /* HealthKitDataProvider+Distance.swift */,
-				E440E229271C9E6E00CAC3F9 /* HealthKitDataProvider+BodyMass.swift */,
-				E440E21F271C9E6E00CAC3F9 /* HealthKitDataProvider+HeartRate.swift */,
-				E440E225271C9E6E00CAC3F9 /* HeatlhKitDataProvider+HRV.swift */,
-				E440E252271CB21A00CAC3F9 /* HealthKitDataProvider+ECG.swift */,
 				E440E256271FC6E400CAC3F9 /* Services */,
 			);
 			path = DataProvider;
@@ -272,7 +270,12 @@
 		E440E257271FC6F600CAC3F9 /* Query */ = {
 			isa = PBXGroup;
 			children = (
-				E440E21C271C9E6E00CAC3F9 /* FetchHeartRateVariabilityForDateRange.swift */,
+				E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */,
+				E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */,
+				E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */,
+				E440E252271CB21A00CAC3F9 /* Query+ECG.swift */,
+				E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */,
+				E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */,
 			);
 			path = Query;
 			sourceTree = "<group>";
@@ -283,6 +286,14 @@
 				E440E25A271FC78E00CAC3F9 /* CalculateDerivedMeasures.swift */,
 			);
 			path = Command;
+			sourceTree = "<group>";
+		};
+		E4AE5A4E273F05A100357BC4 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E4AE5A4F273F05C900357BC4 /* IRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,24 +427,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E440E23C271C9E6E00CAC3F9 /* IDataProvider.swift in Sources */,
-				E440E253271CB21A00CAC3F9 /* HealthKitDataProvider+ECG.swift in Sources */,
+				E440E253271CB21A00CAC3F9 /* Query+ECG.swift in Sources */,
 				E440E236271C9E6E00CAC3F9 /* GenericDataProvider.swift in Sources */,
 				E4870460272F3C5C00715054 /* LineView.swift in Sources */,
-				E440E23F271C9E6E00CAC3F9 /* HealthKitDataProvider+BodyMass.swift in Sources */,
+				E440E23F271C9E6E00CAC3F9 /* Query+BodyMass.swift in Sources */,
 				E440E242271C9E6E00CAC3F9 /* HeartRateSampleSequence.swift in Sources */,
-				E440E233271C9E6E00CAC3F9 /* HealthKitDataProvider+Distance.swift in Sources */,
+				E440E233271C9E6E00CAC3F9 /* Query+Distance.swift in Sources */,
+				E4AE5A50273F05CA00357BC4 /* IRepository.swift in Sources */,
 				E440E24C271CA32800CAC3F9 /* Stopwatch.swift in Sources */,
-				E440E23B271C9E6E00CAC3F9 /* HeatlhKitDataProvider+HRV.swift in Sources */,
+				E440E23B271C9E6E00CAC3F9 /* Query+HRV.swift in Sources */,
 				E440E255271CB9E600CAC3F9 /* AlgorithmAdapter.swift in Sources */,
 				E440E1DD271C98E300CAC3F9 /* ContentView.swift in Sources */,
 				E440E231271C9E6E00CAC3F9 /* HealthKitDataProvider.swift in Sources */,
 				E440E240271C9E6E00CAC3F9 /* DistanceHistogram.swift in Sources */,
 				E440E20C271C9DA100CAC3F9 /* LineGraph.swift in Sources */,
 				E440E230271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp in Sources */,
-				E440E232271C9E6E00CAC3F9 /* FetchHeartRateVariabilityForDateRange.swift in Sources */,
+				E440E232271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift in Sources */,
 				E440E241271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift in Sources */,
 				E440E25B271FC78E00CAC3F9 /* CalculateDerivedMeasures.swift in Sources */,
-				E440E235271C9E6E00CAC3F9 /* HealthKitDataProvider+HeartRate.swift in Sources */,
+				E440E235271C9E6E00CAC3F9 /* Query+HeartRate.swift in Sources */,
 				E440E22F271C9E6E00CAC3F9 /* BridgeTemplate.mm in Sources */,
 				E440E243271C9E6E00CAC3F9 /* SegmentedIntervalsDataSet.swift in Sources */,
 				E440E1DB271C98E300CAC3F9 /* WaveformsApp.swift in Sources */,
