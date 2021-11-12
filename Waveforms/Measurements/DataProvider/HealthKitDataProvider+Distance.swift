@@ -33,10 +33,8 @@ import UIKit
 
 extension HealthKitDataProvider
 {
-	
     func dispatchDistanceQueries( retrospectiveTimeIntervalInMonthsFromNow: Int,
-        externalHandler: @escaping (String, Double) -> String )
-    {
+        externalHandler: @escaping (String, Double) -> String ) {
         
         DispatchQueue.main.async(execute: {
             () -> Void in
@@ -50,12 +48,10 @@ extension HealthKitDataProvider
             //removed; the distance measurements provide a more direct metric
             //--> self.fetchStepCountsIntoWeekdayHistogram( endDate, startDate: startDate! )
             self.fetchWalkRunDistanceIntoWeekdayHistogram( endDate: endDate, startDate: startDate! as NSDate, externalHandler: externalHandler )
-            
         })
     }
     
-    func fetchStepCounts( endTime: NSDate, startDate: NSDate )
-    {
+    func fetchStepCounts( endTime: NSDate, startDate: NSDate ) {
         let endDate = NSDate()
         let comps = NSDateComponents()
         comps.month = -6
@@ -67,10 +63,10 @@ extension HealthKitDataProvider
         let query = HKSampleQuery(sampleType: stepSampleType!, predicate: predicate, limit: 0, sortDescriptors: nil, resultsHandler: {
             (query, results, error) in
             if results == nil {
-                print("There was an error running the query: \(error)")
+                print("There was an error running the query: \(String(describing: error))")
             }
             
-            DispatchQueue.main.async( execute:  {
+            DispatchQueue.main.async(execute:  {
                 for r in results!{
                     let result = r as! HKQuantitySample
                     let quantity = result.quantity
@@ -83,8 +79,7 @@ extension HealthKitDataProvider
         self.healthStore?.execute(query)
     }
   
-    func fetchStepCountsIntoWeekdayHistogram( endDate: NSDate, startDate: NSDate )
-    {
+    func fetchStepCountsIntoWeekdayHistogram( endDate: NSDate, startDate: NSDate ) {
         let type = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)
 
         let interval = NSDateComponents()
@@ -137,10 +132,8 @@ extension HealthKitDataProvider
         self.healthStore?.execute(query)
     }
     
-    
     func fetchWalkRunDistanceIntoWeekdayHistogram( endDate: NSDate, startDate: NSDate,
-        externalHandler: @escaping (String, Double) -> String )
-    {
+        externalHandler: @escaping (String, Double) -> String ) {
         let type = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)
         
         let interval = NSDateComponents()
@@ -187,7 +180,7 @@ extension HealthKitDataProvider
                 //
                 for (weekday, histogramValue) in weekDayDistanceHistogram {
                     print("WEEKDAY |\(weekday)| DISTANCE HISTOGRAM |\(histogramValue)|")
-                    var callback = externalHandler( weekday, histogramValue )
+                    let callback = externalHandler( weekday, histogramValue )
                     print("handler: \(callback)")
                 }
             }

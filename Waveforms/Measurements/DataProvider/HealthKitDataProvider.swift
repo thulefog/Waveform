@@ -72,8 +72,7 @@ public class HealthKitDataProvider {
         
     }
 
-    private func dataTypesToWrite() -> Set<HKSampleType>
-    {
+    private func dataTypesToWrite() -> Set<HKSampleType> {
         let dietaryCalorieEnergyType: HKQuantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryEnergyConsumed)!
         let activeEnergyBurnType: HKQuantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.activeEnergyBurned)!
         let heightType:  HKQuantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height)!
@@ -84,8 +83,7 @@ public class HealthKitDataProvider {
         return writeDataTypes
     }
     
-    private func dataTypesToRead() -> Set<HKObjectType>
-    {
+    private func dataTypesToRead() -> Set<HKObjectType> {
         let birthdayType: HKCharacteristicType = HKObjectType.characteristicType(forIdentifier: HKCharacteristicTypeIdentifier.dateOfBirth)!
         let biologicalSexType: HKCharacteristicType = HKObjectType.characteristicType(forIdentifier: HKCharacteristicTypeIdentifier.biologicalSex)!
         let heightType:  HKQuantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height)!

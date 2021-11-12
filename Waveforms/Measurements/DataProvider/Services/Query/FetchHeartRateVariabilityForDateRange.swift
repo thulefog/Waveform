@@ -28,40 +28,30 @@
 import Foundation
 import UIKit
 
-class FetchHeartRateVariabilityForDateRange : AsynchronousOperationBase {
+class FetchHeartRateVariabilityForDateRange {
     
-    override func main() {
-        if self.isCancelled {
-            state = .finished
-        } else {
-            state = .executing
+    func execute() {
+        
+        print( "\(#function): ENTER")
+        DispatchQueue.main.async (execute: {
+            let date = Date()
+            let calendar = Calendar(identifier: .gregorian)
+            let startDate = calendar.startOfDay(for: date)
             
-            print( "FetchHeartRateVariabilityForDateRange - START")
+            let timeInterval = TimeInterval( 86400 )
+            let endDate = Date( timeInterval: timeInterval, since: startDate as Date  )
             
-            DispatchQueue.main.async (execute: {
-                
-                let date = Date()
-                let calendar = Calendar(identifier: .gregorian)
-                let startDate = calendar.startOfDay(for: date)
-                
-                let timeInterval = TimeInterval( 86400 )
-                let endDate = Date( timeInterval: timeInterval, since: startDate as Date  )
-                
-                HealthKitDataProvider.instance.fetchHRVSamples( startDate: startDate,
-                                                                      endDate: endDate,
-                                                                      externalHandlerSDNNCallback: self.externalHandlerSDNN )
-                
-            })
-            
-        }
+            HealthKitDataProvider.instance.fetchHRVSamples( startDate: startDate,
+                                                            endDate: endDate,
+                                                            callback: self.callback )
+        })
     }
 
-    func externalHandlerSDNN( key: String, sdnnSet: [Double]? ) -> Bool {
+    func callback( key: String, sdnnSet: [Double]? ) -> Bool {
         
-        print( "externalHandlerSDNN: fetched \(key)", key )
+        print( "\(#function): \(key)", key )
         
         DispatchQueue.main.async {
-            
             if( sdnnSet != nil )
             {
                 var trace = "heartRateVariabilitySDNN: N: \(sdnnSet?.count) | SAMPLES: \(sdnnSet as AnyObject)"
@@ -78,8 +68,6 @@ class FetchHeartRateVariabilityForDateRange : AsynchronousOperationBase {
                 alertWindow.makeKeyAndVisible()
                 alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
             }
-            
-            
         }
  
         return true

@@ -24,25 +24,17 @@ void TimeDomainMeasures::processDataInner(const float *inputArray, int count, fl
 
 TimeDomainMeasures::TimeDomainMeasures(std::vector<float> sampleSet )
 {
-  
-  //equivalent statement, but instead used iterator style below ---> _N = sampleSet.size();
-  size_t N = end(sampleSet) - begin(sampleSet);
-  _N = N;
-
-  auto hilo = std::minmax_element(sampleSet.begin(), sampleSet.end());
-
-  _min = *hilo.first;
-  _max = *hilo.second;
-
-  _sum = std::accumulate(begin(sampleSet), end(sampleSet), 0 );
-  
-  _mean = mean<float>( sampleSet );
-  _variance = variance<float>( sampleSet );
-  _standardDeviation = standard_deviation<float>( sampleSet );
-
-  _RMSSD = root_mean_square_successive_differences<float>( sampleSet );
-
-  _lnRMSSD = log( _RMSSD );
+    size_t N = sampleSet.size();
+    _N = (int)N;
+    auto hilo = std::minmax_element(sampleSet.begin(), sampleSet.end());
+    _min = *hilo.first;
+    _max = *hilo.second;
+    _sum = std::accumulate(begin(sampleSet), end(sampleSet), 0 );
+    _mean = mean<float>( sampleSet );
+    _variance = variance<float>( sampleSet );
+    _standardDeviation = standard_deviation<float>( sampleSet );
+    _RMSSD = root_mean_square_successive_differences<float>( sampleSet );
+    _lnRMSSD = log( _RMSSD );
 }
 
 int TimeDomainMeasures::N()

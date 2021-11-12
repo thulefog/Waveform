@@ -134,7 +134,7 @@ public class SegmentedIntervalsDataSet
         }
         
         for segmentIndex in 1...NUMBER_OF_SEGMENTS {
-            trace = "SEGMENT | \(segmentIndex) | \(segments[segmentIndex]?[0]) | \(segments[segmentIndex]?[1])"
+            trace = "SEGMENT | \(segmentIndex) | \(String(describing: segments[segmentIndex]?[0])) | \(String(describing: segments[segmentIndex]?[1]))"
             print( trace )
         }
         return segments
@@ -160,7 +160,7 @@ public class SegmentedIntervalsDataSet
             if( leadingResult.rawValue == 1 && //ComparisonResult.orderedAscending
                 trailingResult.rawValue == -1 ) //expected 0 (ComparisonResult.orderedDescending) but hueristically -1 returned...
             {
-                trace = "determineSegmentIndex: RESULT: VALUE \(dateTimeValue) at INDEX \(segmentIndex) **IN RANGE** { \(segments[segmentIndex]?[0]) ... \(segments[segmentIndex]?[1]) }"
+                trace = "determineSegmentIndex: RESULT: VALUE \(dateTimeValue) at INDEX \(segmentIndex) **IN RANGE** { \(String(describing: segments[segmentIndex]?[0])) ... \(String(describing: segments[segmentIndex]?[1])) }"
                 print( trace )
                 result = segmentIndex
             }

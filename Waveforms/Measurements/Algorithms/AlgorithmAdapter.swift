@@ -44,7 +44,7 @@ struct AlgorithAdapter {
         var outputArray: [Float] = Array(repeating: 0, count: inputArray.count)
         let bridgeInstance = BridgedPort()
 
-        bridgeInstance?.processDataOuter(inputArray, count: inputArray.count, output: &outputArray)
+        bridgeInstance.processDataOuter(inputArray, andLength: inputArray.count, output: &outputArray)
         print("\(#function): input: \(inputArray) output \(outputArray)")
         return outputArray
     }

@@ -22,12 +22,12 @@ struct BridgedAdapter;
 
 @property (nonatomic) void* _Nullable _pointerToImplementationInnerBinding;
 
-@property (strong, nonatomic) id _key;
+@property (strong, nonatomic) id _Nonnull _key;
 
-- (id) init;
+- (id _Nonnull ) init;
 - (void) dealloc;
-- (void) pass: (double[]) data;
-- (void)processDataOuter:(const float * _Nonnull)array count:(NSInteger)count output:(float * _Nonnull)outputArray;
+- (void) pass:(double[_Nonnull])array andLength:(int)length;
+- (void) processDataOuter:(const float * _Nonnull)data andLength:(NSInteger)length output:(float * _Nonnull)outputData;
     
 @end
 

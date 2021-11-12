@@ -28,12 +28,11 @@ import Foundation
 
 import HealthKit
 
-extension HealthKitDataProvider{
+extension HealthKitDataProvider {
         
     public func queryElectorcardiogramSamples(  ) {
         // Create the electrocardiogram sample type.
         let ecgType = HKObjectType.electrocardiogramType()
-
 
         // Query for electrocardiogram samples
         let ecgQuery = HKSampleQuery(sampleType: ecgType,
@@ -61,7 +60,7 @@ extension HealthKitDataProvider{
     
     public typealias carteisanTimeSeries = [Double : Double]
     
-    public func queryElectorcardiogramSamplesForRangeWithResultsCompletion(samples: Int, completion: @escaping (carteisanTimeSeries) -> ()  ) -> carteisanTimeSeries  {
+    public func queryElectorcardiogramSamplesForRangeWithResultsCompletion(samples: Int, completion: @escaping (carteisanTimeSeries) -> ()  )   {
         var timeSeries = [Double:Double]()
 
          if #available(iOS 14.0, *) {
@@ -97,6 +96,8 @@ extension HealthKitDataProvider{
                          case .done:
                              print("\(#function): HKElectrocardiogramQuery: done")
                              completion(timeSeries )
+                         @unknown default:
+                             fatalError("Fatal error handling unknown result case")
                          }
                      }
                      self.healthStore?.execute(query)
@@ -105,9 +106,8 @@ extension HealthKitDataProvider{
              } else {
                  // Fallback on earlier versions
              }
-         
-        return timeSeries
     }
+    
     public func queryElectorcardiogramSamplesForRange(  )  {
         var timeSeries = [Double:Double]()
 
@@ -138,6 +138,9 @@ extension HealthKitDataProvider{
 
                          case .done:
                              print("\(#function): HKElectrocardiogramQuery: done")
+
+                         @unknown default:
+                             fatalError("Fatal error handling unknown result case")
                          }
                      }
                      self.healthStore?.execute(query)

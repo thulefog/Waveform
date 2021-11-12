@@ -7,6 +7,30 @@
 
 import SwiftUI
 
+class ProviderAdapter: ObservableObject {
+
+    @Published var sampleSize: Int = 100 {
+        didSet {
+            fetch()
+        }
+    }
+    @Published var data = [CGFloat]()
+
+    func fetch() {
+        data.removeAll()
+        HealthKitDataProvider.instance.queryElectorcardiogramSamplesForRangeWithResultsCompletion(samples: sampleSize ) { [self] result in
+            DispatchQueue.main.async {
+                //print("RESULT: \(result)")
+                let values = Array(result.values)
+                for value in values {
+                    var element = CGFloat(value)
+                    data.append( element )
+                }
+            }
+        }
+    }
+}
+
 struct ContentView: View {
     var input: [Float]
     var sampleData: [CGFloat]
@@ -14,33 +38,25 @@ struct ContentView: View {
     @State private var update = false
     @State var on = true
     
+    @ObservedObject var providerAdapter = ProviderAdapter()
+    
     //async
     public init()  {
         sampleData = [0.1, 0.2, 0.3, 0.4, 0.5]
     
-        let requestAuthorization = RequestHealthKitAuthorizationAsync()
-        
-        HealthKitDataProvider.instance.queryAverageHeartRate()
-        HealthKitDataProvider.instance.queryElectorcardiogramSamplesForRange()
-        
-        var algorithms = AlgorithAdapter()
+        HealthKitDataProvider.instance.requestHealthKitAuthorization()
+
+        let algorithms = AlgorithAdapter()
         input = [3.9, 7.7, 11.1, 1.11, 1.02, 3.3, 3.9, 0]
         let output = algorithms.execute( inputArray: input )
 
-        var engine = CalculateDerivedMeasures()
+        let engine = CalculateDerivedMeasures()
         if #available(iOS 15.0.0, *) {
-            var output = engine.execute(input: self.input)
+            let output = engine.execute(input: self.input)
             var update = output.map{CGFloat($0)}
         } else {
             // Fallback on earlier versions
         }
-        
-        let fetchHeartRateVariabilitySDNN = FetchHeartRateVariabilityForDateRange()
-         
-        let opQueue = OperationQueue()
-        opQueue.addOperation(requestAuthorization)
-        opQueue.addOperation(fetchHeartRateVariabilitySDNN)
-         
     }
 
     var body: some View {
@@ -66,6 +82,9 @@ struct ContentView: View {
             }
         }
         .background(Color.black)
+        .onAppear {
+            self.providerAdapter.fetch()
+        }
     }
 }
 

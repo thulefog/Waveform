@@ -47,7 +47,7 @@ extension HealthKitDataProvider
             limit: 0, sortDescriptors: nil, resultsHandler: {
                 (query, results, error) in
                 if results == nil {
-                    print("There was an error running the query: \(error)")
+                    print("There was an error running the query: \(String(describing: error))")
                 }
                 DispatchQueue.main.async() {
                     

@@ -39,18 +39,19 @@ struct BridgedAdapter {
     delete _wrappedOuterInstancePointer;
 }
 
--(void)processDataOuter:(const float * _Nonnull)array count:(NSInteger)count output:(float * _Nonnull)outputArray {
-    TimeDomainMeasures tdm;
-    tdm.processDataInner(array, (int)count, outputArray);
-}
-
-- (void) pass: (double[]) data andDataLength: (int) dataLength {
+- (void) pass:(double[]) array andLength:(int)length {
     double x[] = { 1, 2, 3, 4, 5 };
     std::vector<double> v(std::begin(x), std::end(x));
-    std::vector<double> vector_storage(data, data + dataLength);
+    std::vector<double> vector_storage(array, array + length);
     //std::vector<double> v(std::begin(data), std::end(data));
 }
-- (void) execute: ( void *) data {
+
+-(void) processDataOuter:(const float * _Nonnull)data andLength:(NSInteger)length output:(float * _Nonnull)outputData {
+    TimeDomainMeasures tdm;
+    tdm.processDataInner(data, (int)length, outputData);
+}
+
+- (void) execute:(void*) data {
     cout << "execute" << endl;
 }
 
