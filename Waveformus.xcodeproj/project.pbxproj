@@ -200,8 +200,7 @@
 				E440E215271C9E6E00CAC3F9 /* Algorithms */,
 				E440E248271CA32700CAC3F9 /* Core */,
 				E440E22A271C9E6E00CAC3F9 /* TypeSystem */,
-				E4AE5A4E273F05A100357BC4 /* Repositories */,
-				E440E21A271C9E6E00CAC3F9 /* DataProvider */,
+				E440E21A271C9E6E00CAC3F9 /* DataSources */,
 			);
 			path = Measurements;
 			sourceTree = "<group>";
@@ -218,17 +217,18 @@
 			path = Algorithms;
 			sourceTree = "<group>";
 		};
-		E440E21A271C9E6E00CAC3F9 /* DataProvider */ = {
+		E440E21A271C9E6E00CAC3F9 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				E4AE5A4E273F05A100357BC4 /* Repositories */,
+				E440E256271FC6E400CAC3F9 /* Services */,
 				E440E228271C9E6E00CAC3F9 /* IGenericDataProvider.swift */,
 				E440E220271C9E6E00CAC3F9 /* GenericDataProvider.swift */,
 				E440E226271C9E6E00CAC3F9 /* IDataProvider.swift */,
 				E440E222271C9E6E00CAC3F9 /* DataProvider.swift */,
 				E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */,
-				E440E256271FC6E400CAC3F9 /* Services */,
 			);
-			path = DataProvider;
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 		E440E22A271C9E6E00CAC3F9 /* TypeSystem */ = {
