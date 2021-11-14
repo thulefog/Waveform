@@ -21,11 +21,8 @@
 		E440E232271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */; };
 		E440E233271C9E6E00CAC3F9 /* Query+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */; };
 		E440E235271C9E6E00CAC3F9 /* Query+HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */; };
-		E440E236271C9E6E00CAC3F9 /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E220271C9E6E00CAC3F9 /* GenericDataProvider.swift */; };
 		E440E238271C9E6E00CAC3F9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E222271C9E6E00CAC3F9 /* DataProvider.swift */; };
 		E440E23B271C9E6E00CAC3F9 /* Query+HRV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */; };
-		E440E23C271C9E6E00CAC3F9 /* IDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E226271C9E6E00CAC3F9 /* IDataProvider.swift */; };
-		E440E23E271C9E6E00CAC3F9 /* IGenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E228271C9E6E00CAC3F9 /* IGenericDataProvider.swift */; };
 		E440E23F271C9E6E00CAC3F9 /* Query+BodyMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */; };
 		E440E240271C9E6E00CAC3F9 /* DistanceHistogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E22B271C9E6E00CAC3F9 /* DistanceHistogram.swift */; };
 		E440E241271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E22C271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift */; };
@@ -78,11 +75,8 @@
 		E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fetch+HeartRateVariability.swift"; sourceTree = "<group>"; };
 		E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+Distance.swift"; sourceTree = "<group>"; };
 		E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+HeartRate.swift"; sourceTree = "<group>"; };
-		E440E220271C9E6E00CAC3F9 /* GenericDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
 		E440E222271C9E6E00CAC3F9 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+HRV.swift"; sourceTree = "<group>"; };
-		E440E226271C9E6E00CAC3F9 /* IDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDataProvider.swift; sourceTree = "<group>"; };
-		E440E228271C9E6E00CAC3F9 /* IGenericDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGenericDataProvider.swift; sourceTree = "<group>"; };
 		E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+BodyMass.swift"; sourceTree = "<group>"; };
 		E440E22B271C9E6E00CAC3F9 /* DistanceHistogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceHistogram.swift; sourceTree = "<group>"; };
 		E440E22C271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterBeatIntervalSequence.swift; sourceTree = "<group>"; };
@@ -150,9 +144,8 @@
 			children = (
 				E440E244271CA04F00CAC3F9 /* Waveforms.entitlements */,
 				E440E213271C9E6E00CAC3F9 /* Measurements */,
-				E440E204271C9DA000CAC3F9 /* Views */,
+				E4EDBC822740B3C700ED56BB /* Presentation */,
 				E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */,
-				E440E1DC271C98E300CAC3F9 /* ContentView.swift */,
 				E440E1DE271C98E700CAC3F9 /* Assets.xcassets */,
 				E440E1E0271C98E700CAC3F9 /* Preview Content */,
 			);
@@ -222,10 +215,6 @@
 			children = (
 				E4AE5A4E273F05A100357BC4 /* Repositories */,
 				E440E256271FC6E400CAC3F9 /* Services */,
-				E440E228271C9E6E00CAC3F9 /* IGenericDataProvider.swift */,
-				E440E220271C9E6E00CAC3F9 /* GenericDataProvider.swift */,
-				E440E226271C9E6E00CAC3F9 /* IDataProvider.swift */,
-				E440E222271C9E6E00CAC3F9 /* DataProvider.swift */,
 				E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */,
 			);
 			path = DataSources;
@@ -253,6 +242,7 @@
 		E440E248271CA32700CAC3F9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E440E222271C9E6E00CAC3F9 /* DataProvider.swift */,
 				E440E24A271CA32700CAC3F9 /* Stopwatch.swift */,
 			);
 			path = Core;
@@ -294,6 +284,15 @@
 				E4AE5A4F273F05C900357BC4 /* IRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E4EDBC822740B3C700ED56BB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E440E204271C9DA000CAC3F9 /* Views */,
+				E440E1DC271C98E300CAC3F9 /* ContentView.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,9 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E440E23C271C9E6E00CAC3F9 /* IDataProvider.swift in Sources */,
 				E440E253271CB21A00CAC3F9 /* Query+ECG.swift in Sources */,
-				E440E236271C9E6E00CAC3F9 /* GenericDataProvider.swift in Sources */,
 				E4870460272F3C5C00715054 /* LineView.swift in Sources */,
 				E440E23F271C9E6E00CAC3F9 /* Query+BodyMass.swift in Sources */,
 				E440E242271C9E6E00CAC3F9 /* HeartRateSampleSequence.swift in Sources */,
@@ -450,7 +447,6 @@
 				E440E243271C9E6E00CAC3F9 /* SegmentedIntervalsDataSet.swift in Sources */,
 				E440E1DB271C98E300CAC3F9 /* WaveformsApp.swift in Sources */,
 				E440E238271C9E6E00CAC3F9 /* DataProvider.swift in Sources */,
-				E440E23E271C9E6E00CAC3F9 /* IGenericDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
