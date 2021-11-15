@@ -53,7 +53,7 @@ public class HealthKitDataProvider {
 
     public func requestHealthKitAuthorization() {
         
-        let writeDataTypes: Set<HKSampleType> = self.dataTypesToWrite()
+        let _: Set<HKSampleType> = self.dataTypesToWrite()
         let readDataTypes: Set<HKObjectType> = self.dataTypesToRead()
 
         healthStore?.requestAuthorization(toShare: nil, read: readDataTypes ) {

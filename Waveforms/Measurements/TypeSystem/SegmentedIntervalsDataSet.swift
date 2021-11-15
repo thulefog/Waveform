@@ -70,7 +70,7 @@ public class SegmentedIntervalsDataSet
         //_beatPerMinuteSegmentIndexed = Dictionary(minimumCapacity: segmentCount )
         
     
-        var segmentSinks = [Int:Array<InterBeatIntervalElement>]()
+        _ = [Int:Array<InterBeatIntervalElement>]()
         
         let intervalSampleSetSize = interBeatIntervals._interBeatIntervalSampleSet.count
         
@@ -128,7 +128,7 @@ public class SegmentedIntervalsDataSet
             print( trace )
             
             //TODO: refactor into a type, for now indices
-            var sampleInterval: [Date] = [segmentLeadingEdgeDate, segmentTrailingEdgeDate]
+            let sampleInterval: [Date] = [segmentLeadingEdgeDate, segmentTrailingEdgeDate]
             segments[segmentIndex] = sampleInterval
             
         }

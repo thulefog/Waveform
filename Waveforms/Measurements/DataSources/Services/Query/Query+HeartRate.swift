@@ -36,7 +36,7 @@ extension HealthKitDataProvider
     
     // MARK - HKSampleQuery worker methods
     public func printHeartRateSample(data:HKQuantitySample?) {
-        guard let sample:HKQuantitySample = data as? HKQuantitySample else {
+        guard let sample:HKQuantitySample = data else {
             print ( "Error: invalid parameter passed" )
             return
         }
@@ -139,7 +139,7 @@ extension HealthKitDataProvider
                     
                     if( !sampleSet.isEmpty && sampleSet[sample.uuid.uuidString] != nil )
                     {
-                        print( "Warning: Key \(sample.uuid) contains Value \(sampleSet[sample.uuid.uuidString])")
+                        print( "Warning: Key \(sample.uuid) contains Value \(String(describing: sampleSet[sample.uuid.uuidString]))")
                     }
                     else
                     {
@@ -152,7 +152,7 @@ extension HealthKitDataProvider
                         
                     }
                 }
-                var heartRateSampleSequence = HeartRateSampleSequence(  description:key,
+                let heartRateSampleSequence = HeartRateSampleSequence(  description:key,
                                                                         startDate: startDate, endDate: endDate,
                                                                         beatPerMinuteSampleSet: beatsPerMinuteSet )
                 
@@ -206,7 +206,7 @@ extension HealthKitDataProvider
         let predicate = HKQuery.predicateForSamples(withStart: startDate as Date, end: endDate as Date, options: [])
         let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
         
-        var sampleSet = [String: Double]()
+        _ = [String: Double]()
         
         var interBeatIntervalSampleSet = InterBeatIntervalSampleSet()
         

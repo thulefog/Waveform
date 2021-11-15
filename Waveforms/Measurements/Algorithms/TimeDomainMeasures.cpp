@@ -14,7 +14,7 @@ void TimeDomainMeasures::processDataInner(const float *inputArray, int count, fl
     std::cout << "Received an array is of size " << count << '\n';
 
     const float *ptr = &inputArray[0];
-    // simple algorithm - multiples input times 2
+    // simple algorithm - multiplies input times 2
     for(int j=0; j < count; j++){
         outputArray[j] = *ptr * 2 ;
         std::cout << "Array element [" << *ptr << "]" << '\n';

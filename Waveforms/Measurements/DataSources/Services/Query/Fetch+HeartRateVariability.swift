@@ -54,7 +54,7 @@ class FetchHeartRateVariabilityForDateRange {
         DispatchQueue.main.async {
             if( sdnnSet != nil )
             {
-                var trace = "heartRateVariabilitySDNN: N: \(sdnnSet?.count) | SAMPLES: \(sdnnSet as AnyObject)"
+                let trace = "heartRateVariabilitySDNN: N: \(String(describing: sdnnSet?.count)) | SAMPLES: \(sdnnSet as AnyObject)"
                 
                 let alertController = UIAlertController(title: "fetchHRVSamples", message: trace, preferredStyle: UIAlertController.Style.alert)
                 

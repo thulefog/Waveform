@@ -39,7 +39,7 @@ extension Date
 
 public func convertHeartRateToInterbeatInterval( heartRateBeatsPerMinute: Double ) -> Double
 {
-    var normalToNormalIntervalValue = Double( 60000.0 / heartRateBeatsPerMinute )
+    let normalToNormalIntervalValue = Double( 60000.0 / heartRateBeatsPerMinute )
     return normalToNormalIntervalValue
 }
 

@@ -109,7 +109,7 @@ extension HealthKitDataProvider {
     }
     
     public func queryECGSamplesForRange(  )  {
-        var timeSeries = [Double:Double]()
+        _ = [Double:Double]()
 
          if #available(iOS 14.0, *) {
                  let predicate = HKQuery.predicateForSamples(withStart: Date.distantPast,end: Date.distantFuture,options: .strictEndDate)

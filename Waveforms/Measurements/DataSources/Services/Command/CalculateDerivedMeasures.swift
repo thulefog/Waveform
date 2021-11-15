@@ -31,7 +31,7 @@ struct CalculateDerivedMeasures {
     //NEXT: async, await
     @available(iOS 15.0.0, *)
     public func execute( input: [Float] )  -> [Float] {
-        var algorithms = AlgorithAdapter()
+        let algorithms = AlgorithAdapter()
         let output = algorithms.execute( inputArray: input )
         print("\(#function): input: \(input) output \(output)")
         return output

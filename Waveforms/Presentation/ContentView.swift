@@ -23,7 +23,7 @@ class ProviderAdapter: ObservableObject {
                 //print("RESULT: \(result)")
                 let values = Array(result.values)
                 for value in values {
-                    var element = CGFloat(value)
+                    let element = CGFloat(value)
                     data.append( element )
                 }
                 print("\(#function): \(data.count) ECG samples received")
@@ -49,12 +49,12 @@ struct ContentView: View {
         HealthKitDataProvider.instance.requestHealthKitAuthorization()
 
         let algorithms = AlgorithAdapter()
-        let output = algorithms.execute( inputArray: input )
+        _ = algorithms.execute( inputArray: input )
 
         let engine = CalculateDerivedMeasures()
         if #available(iOS 15.0.0, *) {
             let output = engine.execute(input: self.input)
-            var update = output.map{CGFloat($0)}
+            _ = output.map{CGFloat($0)}
         } else {
             // Fallback on earlier versions
         }

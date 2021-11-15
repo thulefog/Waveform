@@ -109,9 +109,9 @@ public class InterBeatIntervalSequence
         var timeInterval = TimeInterval()
         timeInterval = startDate.timeIntervalSince( _ : endDate )
         
-        var startDateString = startDate.toString(dateFormat: "YYYY-MM-dd-HH:mm:ss")
-        var endDateString = endDate.toString(dateFormat: "YYYY-MM-dd-HH:mm:ss")
-        var timeIntervalInt = Int(timeInterval)
+        _ = startDate.toString(dateFormat: "YYYY-MM-dd-HH:mm:ss")
+        _ = endDate.toString(dateFormat: "YYYY-MM-dd-HH:mm:ss")
+        _ = Int(timeInterval)
         
         self._interBeatIntervalSampleSet = interBeatIntervalSampleSet
         
@@ -170,15 +170,15 @@ public class InterBeatIntervalSequence
             
             ssd.append( pow(intervalDelta,2) )
         }
-        var mssd = average( sampleSet: ssd )
+        let mssd = average( sampleSet: ssd )
         _rmssd = Double(sqrt(mssd))
         
         _lnrmssd = log( _rmssd! )
         
         print("-")
         print("Average of SSD: \(mssd)" )
-        print("RMSSD: \(self._rmssd)" )
-        print("ln(RMSSD): \(self._lnrmssd)" )
+        print("RMSSD: \(String(describing: self._rmssd))" )
+        print("ln(RMSSD): \(String(describing: self._lnrmssd))" )
         print("-")
     }
     
@@ -211,9 +211,6 @@ public class InterBeatIntervalSequence
             else {
                 _pNN50 = 0.0
             }
-        }
-        catch _ {
-            print( "&@!%")
         }
     }
     
