@@ -1,6 +1,6 @@
 //
 //  Repository.swift
-//  Waveformus
+//  Waveforms
 //
 //  Created by John Matthew Weston on 11/12/21.
 //

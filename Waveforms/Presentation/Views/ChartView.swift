@@ -1,6 +1,6 @@
 //
 //  ChartView.swift
-//  Waveformus
+//  Waveforms
 //
 //  Created by John Matthew Weston on 11/14/21.
 //
