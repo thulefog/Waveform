@@ -26,6 +26,7 @@ class ProviderAdapter: ObservableObject {
                     var element = CGFloat(value)
                     data.append( element )
                 }
+                print("\(#function): \(data.count) ECG samples received")
             }
         }
     }
@@ -43,11 +44,11 @@ struct ContentView: View {
     //async
     public init()  {
         sampleData = [0.1, 0.2, 0.3, 0.4, 0.5]
-    
+        input = [3.9, 7.7, 11.1, 1.11, 1.02, 3.3, 3.9, 0]
+
         HealthKitDataProvider.instance.requestHealthKitAuthorization()
 
         let algorithms = AlgorithAdapter()
-        input = [3.9, 7.7, 11.1, 1.11, 1.02, 3.3, 3.9, 0]
         let output = algorithms.execute( inputArray: input )
 
         let engine = CalculateDerivedMeasures()
@@ -57,6 +58,7 @@ struct ContentView: View {
         } else {
             // Fallback on earlier versions
         }
+ 
     }
 
     var body: some View {
@@ -65,6 +67,7 @@ struct ContentView: View {
                 .padding()
             LineView(data: [0.1, 2.0, 3.0, 4.0 ], title: "SERIES" )
                   .padding()
+            ChartView(xStepValue: 1, yStepValue: 8)
             LineGraph(dataPoints: sampleData)
                 .trim(to: on ? 1 : 0)
                 .stroke(Color.gray, lineWidth: 2)
@@ -86,6 +89,8 @@ struct ContentView: View {
             self.providerAdapter.fetch()
         }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

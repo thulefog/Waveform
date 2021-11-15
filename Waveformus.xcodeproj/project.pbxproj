@@ -35,6 +35,7 @@
 		E440E25B271FC78E00CAC3F9 /* CalculateDerivedMeasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E25A271FC78E00CAC3F9 /* CalculateDerivedMeasures.swift */; };
 		E4870460272F3C5C00715054 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E487045F272F3C5C00715054 /* LineView.swift */; };
 		E4AE5A50273F05CA00357BC4 /* IRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE5A4F273F05C900357BC4 /* IRepository.swift */; };
+		E4EDBC842741BD3800ED56BB /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EDBC832741BD3800ED56BB /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		E440E25A271FC78E00CAC3F9 /* CalculateDerivedMeasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDerivedMeasures.swift; sourceTree = "<group>"; };
 		E487045F272F3C5C00715054 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		E4AE5A4F273F05C900357BC4 /* IRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepository.swift; sourceTree = "<group>"; };
+		E4EDBC832741BD3800ED56BB /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			children = (
 				E440E205271C9DA000CAC3F9 /* LineGraph.swift */,
 				E487045F272F3C5C00715054 /* LineView.swift */,
+				E4EDBC832741BD3800ED56BB /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				E440E242271C9E6E00CAC3F9 /* HeartRateSampleSequence.swift in Sources */,
 				E440E233271C9E6E00CAC3F9 /* Query+Distance.swift in Sources */,
 				E4AE5A50273F05CA00357BC4 /* IRepository.swift in Sources */,
+				E4EDBC842741BD3800ED56BB /* ChartView.swift in Sources */,
 				E440E24C271CA32800CAC3F9 /* Stopwatch.swift in Sources */,
 				E440E23B271C9E6E00CAC3F9 /* Query+HRV.swift in Sources */,
 				E440E255271CB9E600CAC3F9 /* AlgorithmAdapter.swift in Sources */,
