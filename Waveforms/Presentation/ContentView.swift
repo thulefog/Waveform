@@ -51,7 +51,7 @@ struct ContentView: View {
         let algorithms = AlgorithAdapter()
         _ = algorithms.execute( inputArray: input )
 
-        let engine = CalculateDerivedMeasures()
+        let engine = DeriveMeasures()
         if #available(iOS 15.0.0, *) {
             let output = engine.execute(input: self.input)
             _ = output.map{CGFloat($0)}

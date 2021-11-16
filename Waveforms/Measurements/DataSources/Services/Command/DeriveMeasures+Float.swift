@@ -1,5 +1,5 @@
 //
-//  CalculateDerivedMeasrements.swift
+//  DeriveMeasures.swift
 //  Waveforms
 //
 //  Created by John Matthew Weston on 10/19/21.
@@ -26,7 +26,7 @@
 //
 import Foundation
 
-struct CalculateDerivedMeasures {
+struct DeriveMeasures {
 
     //NEXT: async, await
     @available(iOS 15.0.0, *)
