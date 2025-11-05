@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7D363512EBA8098001A0B5D /* InteractiveFunctionPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D363502EBA8098001A0B5D /* InteractiveFunctionPlot.swift */; };
 		E440E1DB271C98E300CAC3F9 /* WaveformsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */; };
 		E440E1DD271C98E300CAC3F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1DC271C98E300CAC3F9 /* ContentView.swift */; };
 		E440E1DF271C98E700CAC3F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E440E1DE271C98E700CAC3F9 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7D363502EBA8098001A0B5D /* InteractiveFunctionPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveFunctionPlot.swift; sourceTree = "<group>"; };
 		E440E1D7271C98E300CAC3F9 /* Waveformus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waveformus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformsApp.swift; sourceTree = "<group>"; };
 		E440E1DC271C98E300CAC3F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		E440E204271C9DA000CAC3F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D7D363502EBA8098001A0B5D /* InteractiveFunctionPlot.swift */,
 				E440E205271C9DA000CAC3F9 /* LineGraph.swift */,
 				E487045F272F3C5C00715054 /* LineView.swift */,
 				E4EDBC832741BD3800ED56BB /* ChartView.swift */,
@@ -377,7 +380,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E440E1D2271C98E300CAC3F9 /* Build configuration list for PBXProject "Waveformus" */;
+			buildConfigurationList = E440E1D2271C98E300CAC3F9 /* Build configuration list for PBXProject "Waveforms" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -439,6 +442,7 @@
 				E440E23B271C9E6E00CAC3F9 /* Query+HRV.swift in Sources */,
 				E440E255271CB9E600CAC3F9 /* AlgorithmAdapter.swift in Sources */,
 				E440E1DD271C98E300CAC3F9 /* ContentView.swift in Sources */,
+				D7D363512EBA8098001A0B5D /* InteractiveFunctionPlot.swift in Sources */,
 				E440E231271C9E6E00CAC3F9 /* HealthKitDataProvider.swift in Sources */,
 				E440E240271C9E6E00CAC3F9 /* DistanceHistogram.swift in Sources */,
 				E440E20C271C9DA100CAC3F9 /* LineGraph.swift in Sources */,
@@ -624,7 +628,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,7 +664,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -774,7 +778,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E440E1D2271C98E300CAC3F9 /* Build configuration list for PBXProject "Waveformus" */ = {
+		E440E1D2271C98E300CAC3F9 /* Build configuration list for PBXProject "Waveforms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E440E1F9271C98E700CAC3F9 /* Debug */,

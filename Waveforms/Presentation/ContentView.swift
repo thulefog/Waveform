@@ -65,6 +65,9 @@ struct ContentView: View {
           VStack {
             Text("WAVEFORMS")
                 .padding()
+              
+              InteractiveFunctionPlot()
+              
             LineView(data: [0.1, 2.0, 3.0, 4.0 ], title: "SERIES" )
                   .padding()
             ChartView(xStepValue: 1, yStepValue: 8)
