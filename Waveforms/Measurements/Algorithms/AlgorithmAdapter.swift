@@ -15,7 +15,7 @@ extension UnsafeMutablePointer {
     }
 }
 
-struct AlgorithAdapter {
+struct AlgorithmAdapter {
     
     func convertArrayData<T>(count: Int, data: UnsafePointer<T>) -> [T] {
 

@@ -1,5 +1,5 @@
 //
-//  DeriveMeasures.swift
+//  MeasurementAlgorithmProvider.swift
 //  Waveforms
 //
 //  Created by John Matthew Weston on 10/19/21.
@@ -26,12 +26,12 @@
 //
 import Foundation
 
-struct DeriveMeasures {
+struct MeasurementAlgorithmProvider {
 
     //NEXT: async, await
     @available(iOS 15.0.0, *)
     public func execute( input: [Float] )  -> [Float] {
-        let algorithms = AlgorithAdapter()
+        let algorithms = AlgorithmAdapter()
         let output = algorithms.execute( inputArray: input )
         print("\(#function): input: \(input) output \(output)")
         return output

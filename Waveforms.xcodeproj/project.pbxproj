@@ -31,7 +31,7 @@
 		E440E24C271CA32800CAC3F9 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E24A271CA32700CAC3F9 /* Stopwatch.swift */; };
 		E440E253271CB21A00CAC3F9 /* Query+ECG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E252271CB21A00CAC3F9 /* Query+ECG.swift */; };
 		E440E255271CB9E600CAC3F9 /* AlgorithmAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E254271CB9E600CAC3F9 /* AlgorithmAdapter.swift */; };
-		E440E25B271FC78E00CAC3F9 /* DeriveMeasures+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E25A271FC78E00CAC3F9 /* DeriveMeasures+Float.swift */; };
+		E440E25B271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E25A271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift */; };
 		E4870460272F3C5C00715054 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E487045F272F3C5C00715054 /* LineView.swift */; };
 		E4AE5A50273F05CA00357BC4 /* IRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE5A4F273F05C900357BC4 /* IRepository.swift */; };
 		E4EDBC842741BD3800ED56BB /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EDBC832741BD3800ED56BB /* ChartView.swift */; };
@@ -78,7 +78,7 @@
 		E440E24A271CA32700CAC3F9 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		E440E252271CB21A00CAC3F9 /* Query+ECG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Query+ECG.swift"; sourceTree = "<group>"; };
 		E440E254271CB9E600CAC3F9 /* AlgorithmAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmAdapter.swift; sourceTree = "<group>"; };
-		E440E25A271FC78E00CAC3F9 /* DeriveMeasures+Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeriveMeasures+Float.swift"; sourceTree = "<group>"; };
+		E440E25A271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementAlgorithmProvider.swift; sourceTree = "<group>"; };
 		E487045F272F3C5C00715054 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		E4AE5A4F273F05C900357BC4 /* IRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepository.swift; sourceTree = "<group>"; };
 		E4EDBC832741BD3800ED56BB /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
@@ -103,6 +103,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D714AA492EBC2AAB000A90D8 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				E440E25A271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift */,
+				E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */,
+				E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */,
+				E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */,
+				E440E252271CB21A00CAC3F9 /* Query+ECG.swift */,
+				E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */,
+				E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */,
+				E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 		E440E1CE271C98E300CAC3F9 = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +185,8 @@
 				E440E215271C9E6E00CAC3F9 /* Algorithms */,
 				E440E248271CA32700CAC3F9 /* Core */,
 				E440E22A271C9E6E00CAC3F9 /* TypeSystem */,
-				E440E21A271C9E6E00CAC3F9 /* DataSources */,
+				D714AA492EBC2AAB000A90D8 /* Providers */,
+				E440E21A271C9E6E00CAC3F9 /* Storage */,
 			);
 			path = Measurements;
 			sourceTree = "<group>";
@@ -187,14 +203,13 @@
 			path = Algorithms;
 			sourceTree = "<group>";
 		};
-		E440E21A271C9E6E00CAC3F9 /* DataSources */ = {
+		E440E21A271C9E6E00CAC3F9 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				E4AE5A4E273F05A100357BC4 /* Repositories */,
-				E440E256271FC6E400CAC3F9 /* Services */,
-				E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */,
+				E440E222271C9E6E00CAC3F9 /* DataProvider.swift */,
+				E4AE5A4F273F05C900357BC4 /* IRepository.swift */,
 			);
-			path = DataSources;
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		E440E22A271C9E6E00CAC3F9 /* TypeSystem */ = {
@@ -219,48 +234,9 @@
 		E440E248271CA32700CAC3F9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E440E222271C9E6E00CAC3F9 /* DataProvider.swift */,
 				E440E24A271CA32700CAC3F9 /* Stopwatch.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		E440E256271FC6E400CAC3F9 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				E440E258271FC71700CAC3F9 /* Command */,
-				E440E257271FC6F600CAC3F9 /* Query */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		E440E257271FC6F600CAC3F9 /* Query */ = {
-			isa = PBXGroup;
-			children = (
-				E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */,
-				E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */,
-				E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */,
-				E440E252271CB21A00CAC3F9 /* Query+ECG.swift */,
-				E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */,
-				E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */,
-			);
-			path = Query;
-			sourceTree = "<group>";
-		};
-		E440E258271FC71700CAC3F9 /* Command */ = {
-			isa = PBXGroup;
-			children = (
-				E440E25A271FC78E00CAC3F9 /* DeriveMeasures+Float.swift */,
-			);
-			path = Command;
-			sourceTree = "<group>";
-		};
-		E4AE5A4E273F05A100357BC4 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				E4AE5A4F273F05C900357BC4 /* IRepository.swift */,
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,7 +357,7 @@
 				E440E230271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp in Sources */,
 				E440E232271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift in Sources */,
 				E440E241271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift in Sources */,
-				E440E25B271FC78E00CAC3F9 /* DeriveMeasures+Float.swift in Sources */,
+				E440E25B271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift in Sources */,
 				E440E235271C9E6E00CAC3F9 /* Query+HeartRate.swift in Sources */,
 				E440E22F271C9E6E00CAC3F9 /* BridgeTemplate.mm in Sources */,
 				E440E243271C9E6E00CAC3F9 /* SegmentedIntervalsDataSet.swift in Sources */,

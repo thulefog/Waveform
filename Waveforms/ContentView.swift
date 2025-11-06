@@ -48,10 +48,10 @@ struct ContentView: View {
 
         HealthKitDataProvider.instance.requestHealthKitAuthorization()
 
-        let algorithms = AlgorithAdapter()
+        let algorithms = AlgorithmAdapter()
         _ = algorithms.execute( inputArray: input )
 
-        let engine = DeriveMeasures()
+        let engine = MeasurementAlgorithmProvider()
         if #available(iOS 15.0.0, *) {
             let output = engine.execute(input: self.input)
             _ = output.map{CGFloat($0)}
