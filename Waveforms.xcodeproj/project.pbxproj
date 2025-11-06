@@ -148,8 +148,9 @@
 			children = (
 				E440E244271CA04F00CAC3F9 /* Waveforms.entitlements */,
 				E440E213271C9E6E00CAC3F9 /* Measurements */,
-				E4EDBC822740B3C700ED56BB /* Presentation */,
+				E440E204271C9DA000CAC3F9 /* Views */,
 				E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */,
+				E440E1DC271C98E300CAC3F9 /* ContentView.swift */,
 				E440E1DE271C98E700CAC3F9 /* Assets.xcassets */,
 				E440E1E0271C98E700CAC3F9 /* Preview Content */,
 			);
@@ -290,15 +291,6 @@
 				E4AE5A4F273F05C900357BC4 /* IRepository.swift */,
 			);
 			path = Repositories;
-			sourceTree = "<group>";
-		};
-		E4EDBC822740B3C700ED56BB /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				E440E204271C9DA000CAC3F9 /* Views */,
-				E440E1DC271C98E300CAC3F9 /* ContentView.swift */,
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
