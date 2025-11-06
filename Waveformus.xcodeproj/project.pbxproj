@@ -49,12 +49,12 @@
 
 /* Begin PBXFileReference section */
 		D7D363502EBA8098001A0B5D /* InteractiveFunctionPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveFunctionPlot.swift; sourceTree = "<group>"; };
-		E440E1D7271C98E300CAC3F9 /* Waveforms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waveforms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E440E1D7271C98E300CAC3F9 /* Waveformus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waveformus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformsApp.swift; sourceTree = "<group>"; };
 		E440E1DC271C98E300CAC3F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E440E1DE271C98E700CAC3F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E440E1E1271C98E700CAC3F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E440E1E7271C98E700CAC3F9 /* WaveformsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveformsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E440E1E7271C98E700CAC3F9 /* WaveformusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveformusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E440E1EB271C98E700CAC3F9 /* WaveformsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformsTests.swift; sourceTree = "<group>"; };
 		E440E205271C9DA000CAC3F9 /* LineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
 		E440E214271C9E6E00CAC3F9 /* Measurements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Measurements.h; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 		E440E1D8271C98E300CAC3F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E440E1D7271C98E300CAC3F9 /* Waveforms.app */,
-				E440E1E7271C98E700CAC3F9 /* WaveformsTests.xctest */,
+				E440E1D7271C98E300CAC3F9 /* Waveformus.app */,
+				E440E1E7271C98E700CAC3F9 /* WaveformusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,9 +242,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E440E1D6271C98E300CAC3F9 /* Waveforms */ = {
+		E440E1D6271C98E300CAC3F9 /* Waveformus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E440E1FB271C98E700CAC3F9 /* Build configuration list for PBXNativeTarget "Waveforms" */;
+			buildConfigurationList = E440E1FB271C98E700CAC3F9 /* Build configuration list for PBXNativeTarget "Waveformus" */;
 			buildPhases = (
 				E440E1D3271C98E300CAC3F9 /* Sources */,
 				E440E1D4271C98E300CAC3F9 /* Frameworks */,
@@ -254,14 +254,14 @@
 			);
 			dependencies = (
 			);
-			name = Waveforms;
+			name = Waveformus;
 			productName = Waveforms;
-			productReference = E440E1D7271C98E300CAC3F9 /* Waveforms.app */;
+			productReference = E440E1D7271C98E300CAC3F9 /* Waveformus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E440E1E6271C98E700CAC3F9 /* WaveformsTests */ = {
+		E440E1E6271C98E700CAC3F9 /* WaveformusTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E440E1FE271C98E700CAC3F9 /* Build configuration list for PBXNativeTarget "WaveformsTests" */;
+			buildConfigurationList = E440E1FE271C98E700CAC3F9 /* Build configuration list for PBXNativeTarget "WaveformusTests" */;
 			buildPhases = (
 				E440E1E3271C98E700CAC3F9 /* Sources */,
 				E440E1E4271C98E700CAC3F9 /* Frameworks */,
@@ -272,9 +272,9 @@
 			dependencies = (
 				E440E1E9271C98E700CAC3F9 /* PBXTargetDependency */,
 			);
-			name = WaveformsTests;
+			name = WaveformusTests;
 			productName = WaveformsTests;
-			productReference = E440E1E7271C98E700CAC3F9 /* WaveformsTests.xctest */;
+			productReference = E440E1E7271C98E700CAC3F9 /* WaveformusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E440E1D2271C98E300CAC3F9 /* Build configuration list for PBXProject "Waveforms" */;
+			buildConfigurationList = E440E1D2271C98E300CAC3F9 /* Build configuration list for PBXProject "Waveformus" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -309,8 +309,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E440E1D6271C98E300CAC3F9 /* Waveforms */,
-				E440E1E6271C98E700CAC3F9 /* WaveformsTests */,
+				E440E1D6271C98E300CAC3F9 /* Waveformus */,
+				E440E1E6271C98E700CAC3F9 /* WaveformusTests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,7 +379,7 @@
 /* Begin PBXTargetDependency section */
 		E440E1E9271C98E700CAC3F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E440E1D6271C98E300CAC3F9 /* Waveforms */;
+			target = E440E1D6271C98E300CAC3F9 /* Waveformus */;
 			targetProxy = E440E1E8271C98E700CAC3F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -626,7 +626,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E440E1D2271C98E300CAC3F9 /* Build configuration list for PBXProject "Waveforms" */ = {
+		E440E1D2271C98E300CAC3F9 /* Build configuration list for PBXProject "Waveformus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E440E1F9271C98E700CAC3F9 /* Debug */,
@@ -635,7 +635,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E440E1FB271C98E700CAC3F9 /* Build configuration list for PBXNativeTarget "Waveforms" */ = {
+		E440E1FB271C98E700CAC3F9 /* Build configuration list for PBXNativeTarget "Waveformus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E440E1FC271C98E700CAC3F9 /* Debug */,
@@ -644,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E440E1FE271C98E700CAC3F9 /* Build configuration list for PBXNativeTarget "WaveformsTests" */ = {
+		E440E1FE271C98E700CAC3F9 /* Build configuration list for PBXNativeTarget "WaveformusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E440E1FF271C98E700CAC3F9 /* Debug */,
