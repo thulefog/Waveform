@@ -28,7 +28,7 @@
 import HealthKit
 import UIKit
 
-extension HealthKitDataProvider
+extension HealthDataAdapter
 {
     // MARK - Heart Rate Query Day Interval - InterBeatIntervalDataSet typed result
     // EPOCH: 24 Hour Day
@@ -70,7 +70,5 @@ extension HealthKitDataProvider
             self.healthStore?.execute(query)
         })
     }
-
-
 }
 

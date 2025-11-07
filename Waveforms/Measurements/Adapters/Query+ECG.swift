@@ -28,7 +28,7 @@ import Foundation
 
 import HealthKit
 
-extension HealthKitDataProvider {
+extension HealthDataAdapter {
         
     public typealias carteisanTimeSeries = [Double : Double]
 

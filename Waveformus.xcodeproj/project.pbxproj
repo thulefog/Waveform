@@ -3,20 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7D363512EBA8098001A0B5D /* InteractiveFunctionPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D363502EBA8098001A0B5D /* InteractiveFunctionPlot.swift */; };
+		D714AA502EBE85AD000A90D8 /* ScrollableTimeSeriesChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714AA4F2EBE85AD000A90D8 /* ScrollableTimeSeriesChart.swift */; };
+		D714AA522EBE8991000A90D8 /* HealthDataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714AA512EBE8991000A90D8 /* HealthDataReader.swift */; };
+		D7D363512EBA8098001A0B5D /* ChartWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D363502EBA8098001A0B5D /* ChartWidgets.swift */; };
 		E440E1DB271C98E300CAC3F9 /* WaveformsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */; };
 		E440E1DD271C98E300CAC3F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1DC271C98E300CAC3F9 /* ContentView.swift */; };
-		E440E1DF271C98E700CAC3F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E440E1DE271C98E700CAC3F9 /* Assets.xcassets */; };
-		E440E1E2271C98E700CAC3F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E440E1E1271C98E700CAC3F9 /* Preview Assets.xcassets */; };
 		E440E1EC271C98E700CAC3F9 /* WaveformsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1EB271C98E700CAC3F9 /* WaveformsTests.swift */; };
-		E440E20C271C9DA100CAC3F9 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E205271C9DA000CAC3F9 /* LineGraph.swift */; };
 		E440E22F271C9E6E00CAC3F9 /* BridgeTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E440E217271C9E6E00CAC3F9 /* BridgeTemplate.mm */; };
 		E440E230271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E440E218271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp */; };
-		E440E231271C9E6E00CAC3F9 /* HealthKitDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */; };
+		E440E231271C9E6E00CAC3F9 /* HealthDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21B271C9E6E00CAC3F9 /* HealthDataAdapter.swift */; };
 		E440E232271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */; };
 		E440E233271C9E6E00CAC3F9 /* Query+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */; };
 		E440E235271C9E6E00CAC3F9 /* Query+HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */; };
@@ -32,9 +31,7 @@
 		E440E253271CB21A00CAC3F9 /* Query+ECG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E252271CB21A00CAC3F9 /* Query+ECG.swift */; };
 		E440E255271CB9E600CAC3F9 /* AlgorithmAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E254271CB9E600CAC3F9 /* AlgorithmAdapter.swift */; };
 		E440E25B271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E25A271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift */; };
-		E4870460272F3C5C00715054 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E487045F272F3C5C00715054 /* LineView.swift */; };
 		E4AE5A50273F05CA00357BC4 /* IRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE5A4F273F05C900357BC4 /* IRepository.swift */; };
-		E4EDBC842741BD3800ED56BB /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EDBC832741BD3800ED56BB /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,21 +45,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D7D363502EBA8098001A0B5D /* InteractiveFunctionPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveFunctionPlot.swift; sourceTree = "<group>"; };
+		D714AA4A2EBD7B95000A90D8 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		D714AA4F2EBE85AD000A90D8 /* ScrollableTimeSeriesChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTimeSeriesChart.swift; sourceTree = "<group>"; };
+		D714AA512EBE8991000A90D8 /* HealthDataReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataReader.swift; sourceTree = "<group>"; };
+		D7D363502EBA8098001A0B5D /* ChartWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartWidgets.swift; sourceTree = "<group>"; };
 		E440E1D7271C98E300CAC3F9 /* Waveformus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waveformus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformsApp.swift; sourceTree = "<group>"; };
 		E440E1DC271C98E300CAC3F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E440E1DE271C98E700CAC3F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E440E1E1271C98E700CAC3F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E440E1E7271C98E700CAC3F9 /* WaveformusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveformusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E440E1EB271C98E700CAC3F9 /* WaveformsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformsTests.swift; sourceTree = "<group>"; };
-		E440E205271C9DA000CAC3F9 /* LineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
 		E440E214271C9E6E00CAC3F9 /* Measurements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Measurements.h; sourceTree = "<group>"; };
 		E440E216271C9E6E00CAC3F9 /* BridgeTemplate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BridgeTemplate.hpp; sourceTree = "<group>"; };
 		E440E217271C9E6E00CAC3F9 /* BridgeTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeTemplate.mm; sourceTree = "<group>"; };
 		E440E218271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeDomainMeasures.cpp; sourceTree = "<group>"; };
 		E440E219271C9E6E00CAC3F9 /* TimeDomainMeasures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeDomainMeasures.h; sourceTree = "<group>"; };
-		E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitDataProvider.swift; sourceTree = "<group>"; };
+		E440E21B271C9E6E00CAC3F9 /* HealthDataAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthDataAdapter.swift; sourceTree = "<group>"; };
 		E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fetch+HeartRateVariability.swift"; sourceTree = "<group>"; };
 		E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+Distance.swift"; sourceTree = "<group>"; };
 		E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+HeartRate.swift"; sourceTree = "<group>"; };
@@ -79,10 +76,12 @@
 		E440E252271CB21A00CAC3F9 /* Query+ECG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Query+ECG.swift"; sourceTree = "<group>"; };
 		E440E254271CB9E600CAC3F9 /* AlgorithmAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmAdapter.swift; sourceTree = "<group>"; };
 		E440E25A271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementAlgorithmProvider.swift; sourceTree = "<group>"; };
-		E487045F272F3C5C00715054 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		E4AE5A4F273F05C900357BC4 /* IRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRepository.swift; sourceTree = "<group>"; };
-		E4EDBC832741BD3800ED56BB /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D714AA4B2EBE8561000A90D8 /* Assets */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Assets; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E440E1D4271C98E300CAC3F9 /* Frameworks */ = {
@@ -107,15 +106,23 @@
 			isa = PBXGroup;
 			children = (
 				E440E25A271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift */,
-				E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */,
-				E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */,
-				E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */,
-				E440E252271CB21A00CAC3F9 /* Query+ECG.swift */,
-				E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */,
-				E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */,
-				E440E21B271C9E6E00CAC3F9 /* HealthKitDataProvider.swift */,
+				D714AA512EBE8991000A90D8 /* HealthDataReader.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		D714AA562EBE8C57000A90D8 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				E440E21B271C9E6E00CAC3F9 /* HealthDataAdapter.swift */,
+				E440E21C271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift */,
+				E440E229271C9E6E00CAC3F9 /* Query+BodyMass.swift */,
+				E440E21D271C9E6E00CAC3F9 /* Query+Distance.swift */,
+				E440E252271CB21A00CAC3F9 /* Query+ECG.swift */,
+				E440E21F271C9E6E00CAC3F9 /* Query+HeartRate.swift */,
+				E440E225271C9E6E00CAC3F9 /* Query+HRV.swift */,
+			);
+			path = Adapters;
 			sourceTree = "<group>";
 		};
 		E440E1CE271C98E300CAC3F9 = {
@@ -145,18 +152,9 @@
 				E440E204271C9DA000CAC3F9 /* Views */,
 				E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */,
 				E440E1DC271C98E300CAC3F9 /* ContentView.swift */,
-				E440E1DE271C98E700CAC3F9 /* Assets.xcassets */,
-				E440E1E0271C98E700CAC3F9 /* Preview Content */,
+				D714AA4B2EBE8561000A90D8 /* Assets */,
 			);
 			path = Waveforms;
-			sourceTree = "<group>";
-		};
-		E440E1E0271C98E700CAC3F9 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E440E1E1271C98E700CAC3F9 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E440E1EA271C98E700CAC3F9 /* WaveformsTests */ = {
@@ -170,10 +168,8 @@
 		E440E204271C9DA000CAC3F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D7D363502EBA8098001A0B5D /* InteractiveFunctionPlot.swift */,
-				E440E205271C9DA000CAC3F9 /* LineGraph.swift */,
-				E487045F272F3C5C00715054 /* LineView.swift */,
-				E4EDBC832741BD3800ED56BB /* ChartView.swift */,
+				D7D363502EBA8098001A0B5D /* ChartWidgets.swift */,
+				D714AA4F2EBE85AD000A90D8 /* ScrollableTimeSeriesChart.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +183,7 @@
 				E440E22A271C9E6E00CAC3F9 /* TypeSystem */,
 				D714AA492EBC2AAB000A90D8 /* Providers */,
 				E440E21A271C9E6E00CAC3F9 /* Storage */,
+				D714AA562EBE8C57000A90D8 /* Adapters */,
 			);
 			path = Measurements;
 			sourceTree = "<group>";
@@ -206,6 +203,7 @@
 		E440E21A271C9E6E00CAC3F9 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				D714AA4A2EBD7B95000A90D8 /* DataRepository.swift */,
 				E440E222271C9E6E00CAC3F9 /* DataProvider.swift */,
 				E4AE5A4F273F05C900357BC4 /* IRepository.swift */,
 			);
@@ -253,6 +251,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D714AA4B2EBE8561000A90D8 /* Assets */,
 			);
 			name = Waveformus;
 			productName = Waveforms;
@@ -320,8 +321,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E440E1E2271C98E700CAC3F9 /* Preview Assets.xcassets in Resources */,
-				E440E1DF271C98E700CAC3F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,24 +339,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E440E253271CB21A00CAC3F9 /* Query+ECG.swift in Sources */,
-				E4870460272F3C5C00715054 /* LineView.swift in Sources */,
 				E440E23F271C9E6E00CAC3F9 /* Query+BodyMass.swift in Sources */,
 				E440E242271C9E6E00CAC3F9 /* HeartRateSampleSequence.swift in Sources */,
 				E440E233271C9E6E00CAC3F9 /* Query+Distance.swift in Sources */,
 				E4AE5A50273F05CA00357BC4 /* IRepository.swift in Sources */,
-				E4EDBC842741BD3800ED56BB /* ChartView.swift in Sources */,
 				E440E24C271CA32800CAC3F9 /* Stopwatch.swift in Sources */,
 				E440E23B271C9E6E00CAC3F9 /* Query+HRV.swift in Sources */,
 				E440E255271CB9E600CAC3F9 /* AlgorithmAdapter.swift in Sources */,
 				E440E1DD271C98E300CAC3F9 /* ContentView.swift in Sources */,
-				D7D363512EBA8098001A0B5D /* InteractiveFunctionPlot.swift in Sources */,
-				E440E231271C9E6E00CAC3F9 /* HealthKitDataProvider.swift in Sources */,
+				D714AA522EBE8991000A90D8 /* HealthDataReader.swift in Sources */,
+				D7D363512EBA8098001A0B5D /* ChartWidgets.swift in Sources */,
+				E440E231271C9E6E00CAC3F9 /* HealthDataAdapter.swift in Sources */,
 				E440E240271C9E6E00CAC3F9 /* DistanceHistogram.swift in Sources */,
-				E440E20C271C9DA100CAC3F9 /* LineGraph.swift in Sources */,
 				E440E230271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp in Sources */,
 				E440E232271C9E6E00CAC3F9 /* Fetch+HeartRateVariability.swift in Sources */,
 				E440E241271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift in Sources */,
 				E440E25B271FC78E00CAC3F9 /* MeasurementAlgorithmProvider.swift in Sources */,
+				D714AA502EBE85AD000A90D8 /* ScrollableTimeSeriesChart.swift in Sources */,
 				E440E235271C9E6E00CAC3F9 /* Query+HeartRate.swift in Sources */,
 				E440E22F271C9E6E00CAC3F9 /* BridgeTemplate.mm in Sources */,
 				E440E243271C9E6E00CAC3F9 /* SegmentedIntervalsDataSet.swift in Sources */,
@@ -509,7 +507,7 @@
 				CODE_SIGN_ENTITLEMENTS = Waveforms/Waveforms.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Waveforms/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Waveforms/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = H2ST88K7QB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -545,7 +543,7 @@
 				CODE_SIGN_ENTITLEMENTS = Waveforms/Waveforms.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Waveforms/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Waveforms/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = H2ST88K7QB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

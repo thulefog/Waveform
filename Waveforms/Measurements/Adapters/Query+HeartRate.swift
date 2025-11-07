@@ -31,7 +31,7 @@
 import HealthKit
 import UIKit
 
-extension HealthKitDataProvider
+extension HealthDataAdapter
 {
     
     // MARK - HKSampleQuery worker methods

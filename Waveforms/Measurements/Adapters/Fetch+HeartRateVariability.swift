@@ -1,6 +1,6 @@
 //
 //  FetchHeartRateVariabilityForDateRange.swift
-//  VariabilityDaemon
+//  Measurements
 //
 //  Created by John Matthew Weston on 2/9/18.
 //  Copyright © 2018. All rights reserved.
@@ -41,7 +41,7 @@ class FetchHeartRateVariabilityForDateRange {
             let timeInterval = TimeInterval( 86400 )
             let endDate = Date( timeInterval: timeInterval, since: startDate as Date  )
             
-            HealthKitDataProvider.instance.fetchHRVSamples( startDate: startDate,
+            HealthDataAdapter.instance.fetchHRVSamples( startDate: startDate,
                                                             endDate: endDate,
                                                             callback: self.callback )
         })

@@ -31,7 +31,7 @@
 import HealthKit
 import UIKit
 
-extension HealthKitDataProvider
+extension HealthDataAdapter
 {
     func dispatchDistanceQueries( retrospectiveTimeIntervalInMonthsFromNow: Int,
         externalHandler: @escaping (String, Double) -> String ) {

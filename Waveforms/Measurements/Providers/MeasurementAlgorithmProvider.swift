@@ -26,6 +26,20 @@
 //
 import Foundation
 
+/*
+ var input: [Float]
+ input = [3.9, 7.7, 11.1, 1.11, 1.02, 3.3, 3.9, 0]
+... 
+ let engine = MeasurementAlgorithmProvider()
+ if #available(iOS 15.0.0, *) {
+     let output = engine.execute(input: self.input)
+     _ = output.map{CGFloat($0)}
+ } else {
+     // Fallback on earlier versions
+ }
+
+ */
+
 struct MeasurementAlgorithmProvider {
 
     //NEXT: async, await

@@ -1,8 +1,10 @@
 //
-//  HealthKitDataProvider
+//  HealthDataAdapter
 //  Measurements
 //
-//  Created by John Matthew Weston in January 2015, updated to Swift 2.x in December 2015 and added types and queries
+//  Created by John Matthew Weston in January 2015
+//  Updated to Swift 2.x in December 2015, added types and queries
+//  Refactor from provider to adapter to enable reader and writer abstraction above
 //
 //  Copyright © 2015-2017 John Matthew Weston. All rights reserved.
 //
@@ -30,14 +32,13 @@
 import HealthKit
 import UIKit
 
-
-public class HealthKitDataProvider {
+public class HealthDataAdapter {
     
     //Singletons are  at times an anti pattern, but one one HKHealthStore needed per app - so taking this approach for now.
     //https://developer.apple.com/reference/healthkit
-    public class var instance: HealthKitDataProvider {
+    public class var instance: HealthDataAdapter {
         struct Singleton {
-            static let instance = HealthKitDataProvider()
+            static let instance = HealthDataAdapter()
         }
         
         return Singleton.instance

@@ -15,6 +15,14 @@ extension UnsafeMutablePointer {
     }
 }
 
+/*
+ var input: [Float]
+ input = [3.9, 7.7, 11.1, 1.11, 1.02, 3.3, 3.9, 0]
+...
+ let algorithms = AlgorithmAdapter()
+ _ = algorithms.execute( inputArray: input )
+
+ */
 struct AlgorithmAdapter {
     
     func convertArrayData<T>(count: Int, data: UnsafePointer<T>) -> [T] {

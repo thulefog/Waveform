@@ -30,7 +30,7 @@
 import HealthKit
 import UIKit
 
-extension HealthKitDataProvider
+extension HealthDataAdapter
 {
     func fetchWeightSamples() {
         let endDate = NSDate()
