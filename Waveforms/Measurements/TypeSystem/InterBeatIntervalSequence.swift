@@ -43,65 +43,12 @@ public class InterBeatIntervalSequence
     public var _average = Double()
     public var _minMaxWindow = Double()
     public var _standardDeviation : Double?
-    
     public var _rmssd : Double?
     public var _lnrmssd : Double?
-    
     public var _SDNN : Double?
     // effectively Standard Deviation in classical sense but a NN specifc measure
     public var _NN50 = Int()
     public var _pNN50 : Double?
-    
-    /*
-    public init( key: String, description: String, startDate: Date, endDate: Date, beatPerMinuteSampleSet: [Double]  )
-    {
-        _key = key
-        var timeInterval = TimeInterval()
-        timeInterval = startDate.timeIntervalSince( _ : endDate )
-        
-        var startDateString = startDate.toString(dateFormat: "YYYY-MM-dd-HH:mm:ss")
-        var endDateString = endDate.toString(dateFormat: "YYYY-MM-dd-HH:mm:ss")
-        var timeIntervalInt = Int(timeInterval)
-        
-        self._heartRateDataSet = HeartRateDataSet( description: description,
-                                                   startDate: startDateString, endDate: endDateString,
-                                                   timeInterval: timeIntervalInt,
-                                                   beatPerMinuteSampleSet: beatPerMinuteSampleSet )
-        
-        if( beatPerMinuteSampleSet.count == 0 )
-        {
-            print( "GUARD: InterBeatIntervalDataSet ctor - zero samples in beatsPerMinuteSampleSet [Double]")
-            //OPEN: throw?
-            return
-        }
-        
-        self._heartRateDataSet.beatPerMinuteSampleSet = beatPerMinuteSampleSet
-        
-        _rrIntervals = [Double]()
-        
-        for sample in self._heartRateDataSet.beatPerMinuteSampleSet {
-            let calculatedRRInterval = convertHeartRateToInterbeatInterval( heartRateBeatsPerMinute: sample )
-            print( "HR [BPM] \(sample) |  R-R Interval [ms]: \(calculatedRRInterval)" )
-            
-            _rrIntervals.append( calculatedRRInterval )
-        }
-        
-        _minimum = _rrIntervals.min()!
-        _maximum = _rrIntervals.max()!
-        _minMaxWindow = _maximum - _minimum
-        _average = _rrIntervals.reduce(0, {$0 + $1}) / Double( _rrIntervals.count)
-        
-        let sumOfSquaredAvgDiff = _rrIntervals.map { pow($0 - _average, 2.0)}.reduce(0, {$0 + $1})
-        _standardDeviation = sqrt(sumOfSquaredAvgDiff / Double(_rrIntervals.count) )
-        
-        _SDNN = _standardDeviation
-        
-        rootMeanSquareOfSuccessiveDifferences()
-        thresholdNearNeighborDifferences()
-        
-        describe()
-    }
-   */
     
     public init( key: String, description: String, startDate: Date, endDate: Date, interBeatIntervalSampleSet: InterBeatIntervalSampleSet )
     {
@@ -221,13 +168,9 @@ public class InterBeatIntervalSequence
         print("-")
         
         print("StandardDeviation: \(_standardDeviation!)")
-        
         print("Minimum: \(_minimum)")
-        
         print("Maximum: \(_maximum)")
-        
         print("Average: \(_average)")
-        
         print("Min/Max Window \(_minMaxWindow)")
         
         print("-")

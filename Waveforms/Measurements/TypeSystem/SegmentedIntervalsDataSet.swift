@@ -66,10 +66,8 @@ public class SegmentedIntervalsDataSet
         let segments = calculateSegments( trailingEdgeAnchorDate: endDate )
         
         //let segmentIndex = determineSegmentIndex( segments: segments, dateTimeValue: testProbeDateValue )
-        
         //_beatPerMinuteSegmentIndexed = Dictionary(minimumCapacity: segmentCount )
         
-    
         _ = [Int:Array<InterBeatIntervalElement>]()
         
         let intervalSampleSetSize = interBeatIntervals._interBeatIntervalSampleSet.count

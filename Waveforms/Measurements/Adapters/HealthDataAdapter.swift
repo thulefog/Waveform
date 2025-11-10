@@ -8,7 +8,7 @@
 //
 //  Copyright © 2015-2017 John Matthew Weston. All rights reserved.
 //
-//  This code is licensed under the MIT License:
+//  This code is licensed under the MIT License.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),

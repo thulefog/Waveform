@@ -4,7 +4,9 @@
 //
 //  Created by John Matthew Weston on 11/6/25.
 //
-
+//  This code is licensed under the MIT License.
+//  Reference the README and LICENSE files for more detail.
+//
 
 // MARK: IDataProvider - CONCRETE
 
