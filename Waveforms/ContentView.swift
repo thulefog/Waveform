@@ -15,19 +15,18 @@ struct ContentView: View {
     
     //async
     public init()  {
-
+        
         HealthDataAdapter.instance.requestHealthKitAuthorization()
     }
-
+    
     var body: some View {
-          VStack {
+        VStack {
             Text("Waveform")
                 .padding()
-              
-              ScrollableTimeSeriesChart(data: healthDataReader.data )
-
+            
+            ScrollableTimeSeriesChart(data: healthDataReader.data )
         }
-        .background(Color.black)
+        .preferredColorScheme(.dark)
         .onAppear {
             self.healthDataReader.retrieveElectrocardiogramTimeSeries()
         }
