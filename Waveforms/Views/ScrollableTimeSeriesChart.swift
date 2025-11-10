@@ -86,6 +86,7 @@ struct ScrollableTimeSeriesChart: View {
                     //NB: chartXVisibleDomain appears to truncate
                 } // ScrollView
             }
+            .preferredColorScheme(.dark)
             .navigationTitle("Time Series")
         }
         .onAppear {
