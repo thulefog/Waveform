@@ -30,11 +30,13 @@ The `Providers` represents building blocks, roughly aligned with CQRS such as Re
 
 The `Adapters` layer provides the interface encapsulation around the `HealthKit` calls, primarily read only query paths in this vertical. 
 
-There is `Algorithm` code with implementations in both the `Swift` and `C++` languages with a focus on time series signal analysis, ECG and HRV.
+There is `Algorithm` code with implementations in both the `Swift` and `C++` languages with a focus on time series signal analysis ECG time series voltage readings. 
 
 ### Implementation Notes
 
 Large portions of this code is from my previous work iterations over time - scrubbed and evolved forward to refine, but largely kept intact. In past projects in select concept proof verticals, there potentially was Objective-C code (logic or user interface) - but the current stack is `Swift` and `C++` with primarily `SwiftUI` instead of `UIKit` at this juncture.
+
+Note that way back, in a sports medicine context, I had implemented an HRV implementation before Apple added one native to Health APP. My approach back then was based on Root Mean Square of Successive Deviations (RMSSD); code parked but a cleaned up version exists.
 
 # References
 
