@@ -14,7 +14,7 @@ The user interface under construction is illustrated below.
 
 | Waveform | 
 |--|
-|<img src="/images/waveform.png" alt="waveform" width="512">|
+|<img src="/images/_waveform.png" alt="waveform" width="512">|
 
 ## Software Blueprint
 
