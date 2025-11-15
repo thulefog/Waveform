@@ -10,7 +10,7 @@ The ECG time series are queried from a the `HealthKit` store, Apple Watch captur
 
 ## User Interface 
 
-The user interface under construction is illustrated below.
+The user interface under construction is illustrated below, with the iPhone rotated 90 degrees to illustrate the strip mode presentation of the plot.
 
 | Waveform | 
 |--|
@@ -30,9 +30,11 @@ The `Providers` represents building blocks, roughly aligned with CQRS such as Re
 
 The `Adapters` layer provides the interface encapsulation around the `HealthKit` calls, primarily read only query paths in this vertical. 
 
-There is `Algorithm` code with implementations in both the Swift and C++ languages with a focus on time series signal analysis, ECG and HRV.
+There is `Algorithm` code with implementations in both the `Swift` and `C++` languages with a focus on time series signal analysis, ECG and HRV.
 
-Note that much of this code is from my previous work over time, scrubbed and evolved forward but largely kept intact. In past projects in select concept proof verticals, there potentially was Objective-C code 
+### Implementation Notes
+
+Large portions of this code is from my previous work iterations over time - scrubbed and evolved forward to refine, but largely kept intact. In past projects in select concept proof verticals, there potentially was Objective-C code (logic or user interface) - but the current stack is `Swift` and `C++` with primarily `SwiftUI` instead of `UIKit` at this juncture.
 
 # References
 
