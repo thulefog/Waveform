@@ -40,6 +40,8 @@ Note that way back, in a sports medicine context, I had implemented an HRV imple
 
 # References
 
+[Apple Developer Documentation: HKElectrocardiogram](https://developer.apple.com/documentation/healthkit/hkelectrocardiogram)
+
 # Software License
 
 The rest of the source code is under the MIT License as per below:
