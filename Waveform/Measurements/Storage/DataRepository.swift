@@ -1,6 +1,6 @@
 //
 //  DataRepository.swift
-//  Waveformus
+//  Waveform
 //
 //  Created by John Matthew Weston on 11/6/25.
 //

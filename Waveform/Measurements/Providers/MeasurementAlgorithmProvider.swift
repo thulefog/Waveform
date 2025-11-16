@@ -1,6 +1,6 @@
 //
 //  MeasurementAlgorithmProvider.swift
-//  Waveforms
+//  Waveform
 //
 //  Created by John Matthew Weston on 10/19/21.
 //

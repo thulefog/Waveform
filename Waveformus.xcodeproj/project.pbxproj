@@ -10,9 +10,9 @@
 		D714AA502EBE85AD000A90D8 /* ScrollableTimeSeriesChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714AA4F2EBE85AD000A90D8 /* ScrollableTimeSeriesChart.swift */; };
 		D714AA522EBE8991000A90D8 /* HealthDataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714AA512EBE8991000A90D8 /* HealthDataReader.swift */; };
 		D7D363512EBA8098001A0B5D /* ChartWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D363502EBA8098001A0B5D /* ChartWidgets.swift */; };
-		E440E1DB271C98E300CAC3F9 /* WaveformsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */; };
+		E440E1DB271C98E300CAC3F9 /* WaveformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1DA271C98E300CAC3F9 /* WaveformApp.swift */; };
 		E440E1DD271C98E300CAC3F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1DC271C98E300CAC3F9 /* ContentView.swift */; };
-		E440E1EC271C98E700CAC3F9 /* WaveformsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1EB271C98E700CAC3F9 /* WaveformsTests.swift */; };
+		E440E1EC271C98E700CAC3F9 /* WaveformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E1EB271C98E700CAC3F9 /* WaveformTests.swift */; };
 		E440E22F271C9E6E00CAC3F9 /* BridgeTemplate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E440E217271C9E6E00CAC3F9 /* BridgeTemplate.mm */; };
 		E440E230271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E440E218271C9E6E00CAC3F9 /* TimeDomainMeasures.cpp */; };
 		E440E231271C9E6E00CAC3F9 /* HealthDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440E21B271C9E6E00CAC3F9 /* HealthDataAdapter.swift */; };
@@ -50,10 +50,10 @@
 		D714AA512EBE8991000A90D8 /* HealthDataReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataReader.swift; sourceTree = "<group>"; };
 		D7D363502EBA8098001A0B5D /* ChartWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartWidgets.swift; sourceTree = "<group>"; };
 		E440E1D7271C98E300CAC3F9 /* Waveformus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waveformus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformsApp.swift; sourceTree = "<group>"; };
+		E440E1DA271C98E300CAC3F9 /* WaveformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformApp.swift; sourceTree = "<group>"; };
 		E440E1DC271C98E300CAC3F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E440E1E7271C98E700CAC3F9 /* WaveformusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveformusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E440E1EB271C98E700CAC3F9 /* WaveformsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformsTests.swift; sourceTree = "<group>"; };
+		E440E1EB271C98E700CAC3F9 /* WaveformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformTests.swift; sourceTree = "<group>"; };
 		E440E214271C9E6E00CAC3F9 /* Measurements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Measurements.h; sourceTree = "<group>"; };
 		E440E216271C9E6E00CAC3F9 /* BridgeTemplate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BridgeTemplate.hpp; sourceTree = "<group>"; };
 		E440E217271C9E6E00CAC3F9 /* BridgeTemplate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeTemplate.mm; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		E440E22C271C9E6E00CAC3F9 /* InterBeatIntervalSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterBeatIntervalSequence.swift; sourceTree = "<group>"; };
 		E440E22D271C9E6E00CAC3F9 /* HeartRateSampleSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateSampleSequence.swift; sourceTree = "<group>"; };
 		E440E22E271C9E6E00CAC3F9 /* SegmentedIntervalsDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedIntervalsDataSet.swift; sourceTree = "<group>"; };
-		E440E244271CA04F00CAC3F9 /* Waveforms.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waveforms.entitlements; sourceTree = "<group>"; };
+		E440E244271CA04F00CAC3F9 /* Waveform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waveform.entitlements; sourceTree = "<group>"; };
 		E440E246271CA04F00CAC3F9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		E440E24A271CA32700CAC3F9 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		E440E252271CB21A00CAC3F9 /* Query+ECG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Query+ECG.swift"; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 		E440E1CE271C98E300CAC3F9 = {
 			isa = PBXGroup;
 			children = (
-				E440E1D9271C98E300CAC3F9 /* Waveforms */,
-				E440E1EA271C98E700CAC3F9 /* WaveformsTests */,
+				E440E1D9271C98E300CAC3F9 /* Waveform */,
+				E440E1EA271C98E700CAC3F9 /* WaveformTests */,
 				E440E1D8271C98E300CAC3F9 /* Products */,
 				E440E245271CA04F00CAC3F9 /* Frameworks */,
 			);
@@ -144,25 +144,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E440E1D9271C98E300CAC3F9 /* Waveforms */ = {
+		E440E1D9271C98E300CAC3F9 /* Waveform */ = {
 			isa = PBXGroup;
 			children = (
-				E440E244271CA04F00CAC3F9 /* Waveforms.entitlements */,
+				E440E244271CA04F00CAC3F9 /* Waveform.entitlements */,
 				E440E213271C9E6E00CAC3F9 /* Measurements */,
 				E440E204271C9DA000CAC3F9 /* Views */,
-				E440E1DA271C98E300CAC3F9 /* WaveformsApp.swift */,
+				E440E1DA271C98E300CAC3F9 /* WaveformApp.swift */,
 				E440E1DC271C98E300CAC3F9 /* ContentView.swift */,
 				D714AA4B2EBE8561000A90D8 /* Assets */,
 			);
-			path = Waveforms;
+			path = Waveform;
 			sourceTree = "<group>";
 		};
-		E440E1EA271C98E700CAC3F9 /* WaveformsTests */ = {
+		E440E1EA271C98E700CAC3F9 /* WaveformTests */ = {
 			isa = PBXGroup;
 			children = (
-				E440E1EB271C98E700CAC3F9 /* WaveformsTests.swift */,
+				E440E1EB271C98E700CAC3F9 /* WaveformTests.swift */,
 			);
-			path = WaveformsTests;
+			path = WaveformTests;
 			sourceTree = "<group>";
 		};
 		E440E204271C9DA000CAC3F9 /* Views */ = {
@@ -359,7 +359,7 @@
 				E440E235271C9E6E00CAC3F9 /* Query+HeartRate.swift in Sources */,
 				E440E22F271C9E6E00CAC3F9 /* BridgeTemplate.mm in Sources */,
 				E440E243271C9E6E00CAC3F9 /* SegmentedIntervalsDataSet.swift in Sources */,
-				E440E1DB271C98E300CAC3F9 /* WaveformsApp.swift in Sources */,
+				E440E1DB271C98E300CAC3F9 /* WaveformApp.swift in Sources */,
 				E440E238271C9E6E00CAC3F9 /* DataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E440E1EC271C98E700CAC3F9 /* WaveformsTests.swift in Sources */,
+				E440E1EC271C98E700CAC3F9 /* WaveformTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,14 +504,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Waveforms/Waveforms.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Waveform/Waveform.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Waveforms/Assets/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Waveform/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = H2ST88K7QB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Waveforms/Info.plist;
+				INFOPLIST_FILE = Waveform/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Waveformus;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Requesting access to health sample measurements for analysis purposes";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Requesting access to health sample measurements for analysis purposes";
@@ -529,7 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.aquavit.Waveformus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = Waveforms/Measurements/Measurements.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Waveform/Measurements/Measurements.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,14 +540,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Waveforms/Waveforms.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Waveform/Waveform.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Waveforms/Assets/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Waveform/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = H2ST88K7QB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Waveforms/Info.plist;
+				INFOPLIST_FILE = Waveform/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Waveformus;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Requesting access to health sample measurements for analysis purposes";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Requesting access to health sample measurements for analysis purposes";
@@ -565,7 +565,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.aquavit.Waveformus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = Waveforms/Measurements/Measurements.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Waveform/Measurements/Measurements.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

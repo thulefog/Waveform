@@ -1,6 +1,6 @@
 //
 //  ScrollableTimeSeriesChart.swift
-//  Waveformus
+//  Waveform
 //
 //  Created by John Matthew Weston on 11/7/25.
 //
