@@ -1,8 +1,8 @@
-# Waveforms
+# Waveform
 
 # Abstract
 
-`Waveforms` is a workbench iOS application that illustrates scaffolding to retrieve and display time series data streams. 
+`Waveform` is a workbench iOS application that illustrates scaffolding to retrieve and display time series data streams. 
 
 The initial implementation is focused on handling Electrocardiogram signals - querying for and displaying one signal. 
 
@@ -39,6 +39,8 @@ Large portions of this code is from my previous work iterations over time - scru
 Note that way back, in a sports medicine context, I had implemented an HRV implementation before Apple added one native to Health APP. My approach back then was based on Root Mean Square of Successive Deviations (RMSSD); code parked but a cleaned up version exists.
 
 # References
+
+The sample type `HKElectrocardiogram` representing the ECG voltage signals in `HealthKit` is used intact, as is in this particular vertical.
 
 [Apple Developer Documentation: HKElectrocardiogram](https://developer.apple.com/documentation/healthkit/hkelectrocardiogram)
 
